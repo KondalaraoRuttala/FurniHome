@@ -1,33 +1,55 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
-
+import { CartProvider } from "./components/CartContext"; // ✅ fixed path
+import NavbarComponent from "./components/NavbarComponent";
+import HeroSection from "./components/HeroSection";
+import FeaturedSection from "./components/FeaturedSection";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ModernInterior from "./components/ModernInterior";
+import LivingRoomSection from "./components/LivingRoomSection";
+import BedRoomSection from "./components/BedRoomSection";
+import DiningSection from "./components/DiningSection";
+import SofasSection from "./components/SofasSection";
+import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
-import Footer from "./components/Footer";
-import { CartProvider } from "./context/CartContext";
+import CartComponent from "./components/CartComponent";
+import AboutUs from "./components/AboutUs";
+import Deals from "./components/Deals";
+import Collections from "./components/Collections";
 
 function App() {
   return (
-    <Router>
-       <CartProvider>
-      {/* your routes and components */}
-    </CartProvider>
-      <Navbar />
-      <Carousel />
-      <Footer />
-      <Routes>
-        <Route path="/" element={<h2 style={{ textAlign: "center", marginTop: "50px" }}>Welcome to EMART Home Page</h2>} />
-        <Route path="/services" element={<h2 style={{ textAlign: "center", marginTop: "50px" }}>Services Page</h2>} />
-        <Route path="/deals" element={<h2 style={{ textAlign: "center", marginTop: "50px" }}>Deals Page</h2>} />
-        <Route path="/aboutus" element={<h2 style={{ textAlign: "center", marginTop: "50px" }}>About Us Page</h2>} />
+    <CartProvider>
+      <Router>
+        <NavbarComponent />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <FeaturedSection />
+                <WhyChooseUs />
+                <ModernInterior />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/living" element={<LivingRoomSection />} />
+          <Route path="/bedroom" element={<BedRoomSection />} />
+          <Route path="/dining" element={<DiningSection />} />
+          <Route path="/sofas" element={<SofasSection />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<CartComponent />} />
+          <Route path="/about" element={<AboutUs/>} />
+          <Route path="/Deals" element={<Deals/>} />
+          <Route path="/collections" element={<Collections/>} />
 
-        {/* Pages for Signup and Login */}
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

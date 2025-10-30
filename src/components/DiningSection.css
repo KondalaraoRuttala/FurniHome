@@ -1,0 +1,27 @@
+.dining-section {
+  background-color: #fff;
+}
+
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* ✅ Center the last row if it has fewer than 4 cards */
+.dining-section .row {
+  justify-content: center;
+}

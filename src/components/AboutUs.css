@@ -1,0 +1,25 @@
+.aboutus-section {
+  position: relative;
+  color: white;
+}
+
+.aboutus-section .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+
+.about-card {
+  border-left: 5px solid #ffc107;
+}
+
+.choose-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.choose-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-mission {
+  border-left: 5px solid #ffc107;
+}

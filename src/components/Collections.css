@@ -1,0 +1,46 @@
+.collections-section {
+  background: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.collection-card {
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+  background-color: #fff;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.collection-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.collection-card:hover .collection-image {
+  transform: scale(1.08);
+}
+
+.tag-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(90deg, #ff6b6b, #fca311);
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-dark:hover {
+  background-color: #222;
+  color: #fff;
+  border-color: #222;
+}

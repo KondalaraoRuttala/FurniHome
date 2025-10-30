@@ -1,0 +1,33 @@
+.deals-section {
+  background: linear-gradient(180deg, #fff8e1 0%, #ffffff 100%);
+}
+
+.deal-card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff5722;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.timer {
+  background: #fff3cd;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
