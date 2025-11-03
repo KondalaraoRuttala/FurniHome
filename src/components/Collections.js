@@ -1,5 +1,6 @@
 // src/components/Collections.js
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Collections.css";
 import Living from "../assets/Images/Living7.jpg";
@@ -39,6 +40,8 @@ const collections = [
 ];
 
 function Collections() {
+  const navigate = useNavigate();
+
   return (
     <section className="collections-section py-5">
       <div className="container">
@@ -64,7 +67,10 @@ function Collections() {
                 <div className="card-body text-center p-4">
                   <h5 className="fw-bold text-dark">{item.name}</h5>
                   <p className="text-muted small">{item.description}</p>
-                  <button className="btn btn-outline-dark rounded-pill px-4 mt-2">
+                  <button
+                    className="btn btn-outline-dark rounded-pill px-4 mt-2"
+                    onClick={() => navigate(`/collection/${item.id}`)}
+                  >
                     View Collection
                   </button>
                 </div>

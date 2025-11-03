@@ -163,7 +163,7 @@ function NavbarComponent() {
                   <li key={item.id} className="nav-item dropdown">
                     <a
                       className="nav-link nav-link-custom dropdown-toggle"
-                      href="#"
+                      href="#/"
                       id="categoriesDropdown"
                       role="button"
                       data-bs-toggle="dropdown"

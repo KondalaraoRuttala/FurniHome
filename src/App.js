@@ -17,6 +17,7 @@ import CartComponent from "./components/CartComponent";
 import AboutUs from "./components/AboutUs";
 import Deals from "./components/Deals";
 import Collections from "./components/Collections";
+import CollectionDetails from "./components/CollectionDetails";
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/Deals" element={<Deals/>} />
           <Route path="/collections" element={<Collections/>} />
-
+             <Route path="/collection/:id" element={<CollectionDetails />} />
         </Routes>
       </Router>
     </CartProvider>

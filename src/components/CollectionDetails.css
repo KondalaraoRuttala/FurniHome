@@ -1,0 +1,37 @@
+/* src/components/CollectionDetails.css */
+
+/* Outer container takes full height for consistent centering */
+.collection-details-container {
+  min-height: 90vh; /* keeps all sections same vertical space */
+  background-color: #f9f9f9;
+}
+
+/* Card layout */
+.details-card {
+  width: 100%;
+  max-width: 1100px;
+  height: 600px; /* fixed height for uniform layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image styling to keep same size across all */
+.collection-detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover; /* ensures images fill same space */
+  border-radius: 10px;
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+  .details-card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .collection-detail-image {
+    max-height: 300px;
+  }
+}
