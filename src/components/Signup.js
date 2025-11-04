@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -106,9 +107,9 @@ const Signup = () => {
         <div className="text-center mt-4">
           <p className="small text-muted">
             Already have an account?{" "}
-            <a href="/login" className="fw-semibold text-decoration-none" style={{ color: "#8B4513" }}>
+            <Link to="/login" className="fw-semibold text-decoration-none" style={{ color: "#8B4513" }}>
               Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>

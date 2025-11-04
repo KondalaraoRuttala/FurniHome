@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -94,9 +95,9 @@ const Login = () => {
                 Remember me
               </label>
             </div>
-            <a href="#/" className="text-danger small text-decoration-none">
+            <Link to="/login" className="text-danger small text-decoration-none">
               Forgot Password?
-            </a>
+            </Link>
           </div>
 
           <button
@@ -119,9 +120,9 @@ const Login = () => {
         <div className="text-center mt-4">
           <p className="small text-muted">
             Don’t have an account?{" "}
-            <a href="#/" className="text-danger fw-semibold text-decoration-none">
+            <Link to="/signup" className="text-danger fw-semibold text-decoration-none">
               Sign Up
-            </a>
+            </Link>
           </p>
         </div>
       </div>

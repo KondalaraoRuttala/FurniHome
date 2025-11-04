@@ -67,10 +67,10 @@ const Footer = () => {
             © {new Date().getFullYear()} <strong>eMart</strong> – All Rights Reserved.
           </p>
           <div className="footer-social">
-            <a href="#/"><i className="bi bi-facebook"></i></a>
-            <a href="#/"><i className="bi bi-instagram"></i></a>
-            <a href="#/"><i className="bi bi-twitter"></i></a>
-            <a href="#/"><i className="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"><i className="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i className="bi bi-instagram"></i></a>
+            <a href="https://x.com/"><i className="bi bi-twitter"></i></a>
+            <a href="https://web.whatsapp.com/"><i className="bi bi-whatsapp"></i></a>
           </div>
         </div>
       </div>
